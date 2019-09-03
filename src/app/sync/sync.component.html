@@ -1,22 +1,23 @@
 <div class="control-section">
-  <!-- <img src= '/assets/Clementine Rose 2_02 (3).jpg' alt="will-smith">
+     <input type="text" placeholder="Search Appointements">
+   <!-- <img src= '/assets/Clementine Rose 2_02 (3).jpg' alt="will-smith">
   <img src='/assets/James_Robson.png' alt="alice">
   <img src='/assets/586b80e2b6fc1117b60b27a0.png' alt="robson"> -->
 
  <ejs-schedule #scheduleObj cssClass='schedule-group-custom-work-days' width='100%' height='650px' [currentView]="currentView"
      [group]="group" [selectedDate]="selectedDate" (actionBegin)="onActionBegin($event)" (popupOpen)="onPopupOpen($event)"
      (renderCell)="onRenderCell($event)" [eventSettings]="eventSettings" [allowResizing]="allowResizing"
+
+
      [allowDragAndDrop]="allowDragDrop">
      <ng-template #resourceHeaderTemplate let-data>
          <div class='template-wrap'>
-             <div class="resource-image {{getDoctorImage(data)}}"></div>
+             <!-- <div class="resource-image {{getDoctorImage(data)}}"></div> -->
              <div class="resource-details">
                  <div class="resource-name">{{getDoctorName(data)}}</div>
                  <div class="resource-designation">{{getDoctorLevel(data)}}</div>
 
              </div>
-
-
          </div>
      </ng-template>
      <e-views>
